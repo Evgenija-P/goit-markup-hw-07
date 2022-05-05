@@ -8,19 +8,14 @@
     }
 
     &__name {
+        @include text(18px, bold, 2, 0.06em);
         display: block;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em;
         color: var(--basic-color);
     }
 
     &__text {
+        @include text(16px, null, 1.83, 0.03em);
         display: block;
-        font-size: 16px;
-        line-height: 1.83;
-        letter-spacing: 0.03em;
     }
 
     &__text--properties {
@@ -35,10 +30,7 @@
 
     &__container {
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        @include side(0, 0, 100%, 100%);
     
         background: rgba(33, 150, 243, 0.9);
         transform: translateY(100%);
@@ -50,20 +42,14 @@
     }
 
     &__text {
-        width: 322px;
-        height: 168px;
+        @include text(18px, null, 1.56, 0.03em);
+        @include side(50%, 50%, 322px, 168px);
         position: absolute;
-        top: 50%;
-        left: 50%;
         transform: translate(-50%, -50%);
         color: var(--second-accent-color);
-        font-size: 18px;
-        line-height: 1.56;
-        letter-spacing: 0.03em;
     }
 
 }
-
 
 .products-list__link:hover .thumb__container,
 .products-list__link:focus .thumb__container {
@@ -97,7 +83,6 @@
                 0px 4px 4px rgba(0, 0, 0, 0.06),
                 1px 4px 6px rgba(0, 0, 0, 0.16);
         }
-        
     }
 
     &__item:nth-child(3n) {

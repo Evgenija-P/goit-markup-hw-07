@@ -1,19 +1,17 @@
-.logo--properties {
-    margin-right: 93px;
-}
-
 .logo {
+    @include text(26px, bold, 1.19, null);
     font-family: 'Raleway';
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
     color: #000000;
-}
 
-.logo--accent {
-    color: var(--accent-color);
-}
+    &--properties {
+        margin-right: 93px;
+    }
 
-.logo--second__accent {
-    color: var(--second-accent-color);
+    &--accent {
+        color: var(--accent-color);
+    }
+
+    &--second__accent {
+        color: var(--second-accent-color);
+    }
 }
