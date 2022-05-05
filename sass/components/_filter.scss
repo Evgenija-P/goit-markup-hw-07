@@ -1,13 +1,13 @@
-.filters-list {
+.filters__list {
     display: flex;
     justify-content: center;
 }
 
-.filters-li:not(:last-child) {
+.filters__item:not(:last-child) {
     margin-right: 8px;
 }
 
-.btn-text {
+.filters__btn-text{
     font-family: Roboto;
     font-weight: 500;
     font-size: 16px;
@@ -23,8 +23,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-text:hover,
-.btn-text:focus {
+.filters__btn-text:hover,
+.filters__btn-text:focus {
     color: var(--second-accent-color);
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
