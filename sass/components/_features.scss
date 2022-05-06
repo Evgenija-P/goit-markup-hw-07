@@ -40,10 +40,11 @@
             margin-top: 24px;
         }
     }
+
+    &__topik:not(:last-child),
+    &__text:not(:last-child),
+    &__container:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
-.features__topik:not(:last-child),
-.features__text:not(:last-child),
-.features__container:not(:last-child) {
-    margin-right: 30px;
-}

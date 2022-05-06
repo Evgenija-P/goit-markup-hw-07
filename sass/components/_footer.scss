@@ -37,6 +37,11 @@
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
+
+        &__contacts-link:hover,
+        &__contacts-link:focus {
+        color: var(--accent-color);
+        }
     }
 
     &-name {
@@ -86,15 +91,10 @@
             background-color: var(--accent-color);
         }
 
+        &__link:hover &__icon,
+        &__link:focus &__icon {
+        fill: var(--second-accent-color);
+            }           
     }
-}
 
-.footer-social__link:hover .footer-social__icon,
-.footer-social__link:focus .footer-social__icon {
-    fill: var(--second-accent-color);
-}
-
-.footer-list__contacts-link:hover,
-.footer-list__contacts-link:focus {
-    color: var(--accent-color);
 }

@@ -29,27 +29,27 @@
         align-items: center;
         box-sizing: border-box;
         border-radius: 4px;
+        outline: none;
         transition-property: fill, border, border-radius;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-}
 
-.client-list__social-icon {
-    fill: #AFB1B8;
-    transition-property: fill, border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    &__social-link:hover,
+    &__social-link:focus {
+        fill: var(--accent-color);
+        border: 1px solid var(--accent-color);
+        border-radius: 4px;
+    }
+        &:hover &__social-icon,
+        &:focus &__social-icon {
+        fill: var(--accent-color);
+    }
 
-.client-list__social-link:hover,
-.client-list__social-link:focus {
-    fill: var(--accent-color);
-    border: 1px solid var(--accent-color);
-    border-radius: 4px;
-}
-
-.client-list__social-link:hover .client-list__social-icon,
-.client-list__social-link:focus .client-list__social-icon {
-    fill: var(--accent-color);
+    &__social-icon {
+        fill: #AFB1B8;
+        transition-property: fill, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
+    }
 }

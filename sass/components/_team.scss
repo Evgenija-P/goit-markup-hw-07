@@ -78,6 +78,11 @@
         &:focus {
             background-color: var(--accent-color);
         }
+
+        &:hover .team-list__social-icon,
+        &:focus .team-list__social-icon {
+        fill: var(--second-accent-color);
+        }
     }
 
     &__social-icon {
@@ -87,9 +92,4 @@
     &__social-item:not(:last-child) {
         margin-right: 10px;
     }
-}
-
-.team-list__social-link:hover .team-list__social-icon,
-.team-list__social-link:focus .team-list__social-icon {
-    fill: var(--second-accent-color);
 }
